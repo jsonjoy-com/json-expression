@@ -1,5 +1,5 @@
 import * as util from '../util';
-import {Expression, ExpressionResult} from '../codegen-steps';
+import {Expression, type ExpressionResult} from '../codegen-steps';
 import type * as types from '../types';
 
 const binaryOperands = (

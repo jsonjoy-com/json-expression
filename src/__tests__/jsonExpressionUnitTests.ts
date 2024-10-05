@@ -1,4 +1,4 @@
-import {Expr, JsonExpressionCodegenContext} from '../types';
+import type {Expr, JsonExpressionCodegenContext} from '../types';
 
 export type Check = (
   expression: Expr,

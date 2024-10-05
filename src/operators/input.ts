@@ -1,7 +1,7 @@
-import {Expression, ExpressionResult, Literal} from '../codegen-steps';
+import {Expression, type ExpressionResult, Literal} from '../codegen-steps';
 import * as util from '../util';
 import * as jsonPointer from '@jsonjoy.com/json-pointer';
-import {Vars} from '../Vars';
+import type {Vars} from '../Vars';
 import {$$find} from '@jsonjoy.com/json-pointer/lib/codegen/find';
 import type * as types from '../types';
 

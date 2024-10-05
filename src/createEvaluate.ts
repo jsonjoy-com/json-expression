@@ -1,4 +1,4 @@
-import {Expr, JsonExpressionCodegenContext, JsonExpressionExecutionContext, Literal, OperatorMap} from './types';
+import type {Expr, JsonExpressionCodegenContext, JsonExpressionExecutionContext, Literal, OperatorMap} from './types';
 import * as util from './util';
 
 export const createEvaluate = ({operators, createPattern}: {operators: OperatorMap} & JsonExpressionCodegenContext) => {

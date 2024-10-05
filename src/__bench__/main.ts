@@ -4,7 +4,7 @@
 
 import * as Benchmark from 'benchmark';
 import {JsonExpressionCodegen} from '../codegen';
-import {Expr} from '../types';
+import type {Expr} from '../types';
 import {evaluate} from '../evaluate';
 import {operatorsMap} from '../operators';
 import {Vars} from '../Vars';

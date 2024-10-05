@@ -1,4 +1,4 @@
-import {Expression, ExpressionResult, Literal} from '../codegen-steps';
+import {Expression, type ExpressionResult, Literal} from '../codegen-steps';
 import type * as types from '../types';
 
 export const branchingOperators: types.OperatorDefinition<any>[] = [

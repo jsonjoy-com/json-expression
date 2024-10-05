@@ -1,7 +1,7 @@
 import {Vars} from '../Vars';
 import {JsonExpressionCodegen} from '../codegen';
 import {operatorsMap} from '../operators';
-import {Expr, JsonExpressionCodegenContext} from '../types';
+import type {Expr, JsonExpressionCodegenContext} from '../types';
 
 const compile = (expression: Expr, options: JsonExpressionCodegenContext = {}) => {
   const codegen = new JsonExpressionCodegen({

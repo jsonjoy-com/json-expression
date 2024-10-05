@@ -1,7 +1,7 @@
 import {Vars} from '../Vars';
 import {evaluate} from '../evaluate';
-import {Expr} from '../types';
-import {Check} from './jsonExpressionCodegenTests';
+import type {Expr} from '../types';
+import type {Check} from './jsonExpressionCodegenTests';
 
 export const jsonExpressionEvaluateTests = (check: Check) => {
   describe('Evaluate tests', () => {

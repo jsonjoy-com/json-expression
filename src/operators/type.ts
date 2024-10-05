@@ -1,4 +1,4 @@
-import {Expression, ExpressionResult} from '../codegen-steps';
+import {Expression, type ExpressionResult} from '../codegen-steps';
 import * as util from '../util';
 import type * as types from '../types';
 

@@ -1,4 +1,4 @@
-import {Expression, ExpressionResult, Literal} from '../codegen-steps';
+import {Expression, type ExpressionResult, Literal} from '../codegen-steps';
 import {deepEqual} from '@jsonjoy.com/util/lib/json-equal/deepEqual';
 import {$$deepEqual} from '@jsonjoy.com/util/lib/json-equal/$$deepEqual';
 import * as util from '../util';

@@ -1,5 +1,5 @@
 import * as util from '../util';
-import {Expression, ExpressionResult, Literal} from '../codegen-steps';
+import {Expression, type ExpressionResult, Literal} from '../codegen-steps';
 import type * as types from '../types';
 
 const validateSetOperandCount = (count: number) => {

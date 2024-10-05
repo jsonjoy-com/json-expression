@@ -1,8 +1,8 @@
 import * as util from '../util';
-import {Expression, ExpressionResult, Literal} from '../codegen-steps';
+import {Expression, type ExpressionResult, Literal} from '../codegen-steps';
 import {$$deepEqual} from '@jsonjoy.com/util/lib/json-equal/$$deepEqual';
 import type * as types from '../types';
-import {Vars} from '../Vars';
+import type {Vars} from '../Vars';
 
 const {isArray} = Array;
 const objectKeys = Object.keys;

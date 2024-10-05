@@ -1,8 +1,8 @@
-import {Expression, ExpressionResult} from '../codegen-steps';
+import {Expression, type ExpressionResult} from '../codegen-steps';
 import type * as types from '../types';
 import {toPath} from '@jsonjoy.com/json-pointer/lib/util';
-import {Path} from '@jsonjoy.com/json-pointer/lib/types';
-import {JavaScript, JavaScriptLinked, compileClosure} from '@jsonjoy.com/util/lib/codegen';
+import type {Path} from '@jsonjoy.com/json-pointer/lib/types';
+import {type JavaScript, type JavaScriptLinked, compileClosure} from '@jsonjoy.com/util/lib/codegen';
 import {$findRef} from '@jsonjoy.com/json-pointer/lib/codegen/findRef';
 import {find} from '@jsonjoy.com/json-pointer/lib/find';
 

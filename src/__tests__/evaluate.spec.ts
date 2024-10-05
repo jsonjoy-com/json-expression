@@ -1,6 +1,6 @@
 import {Vars} from '../Vars';
 import {evaluate} from '../evaluate';
-import {Expr, JsonExpressionCodegenContext} from '../types';
+import type {Expr, JsonExpressionCodegenContext} from '../types';
 import {jsonExpressionCodegenTests} from './jsonExpressionCodegenTests';
 import {jsonExpressionEvaluateTests} from './jsonExpressionEvaluateTests';
 import {jsonExpressionUnitTests} from './jsonExpressionUnitTests';

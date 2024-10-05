@@ -294,11 +294,11 @@ export const reduce = (
   run: () => unknown,
 ): unknown => {
   vars.set(accname, initialValue);
-  arr.forEach((item) => {
+  for (const item of arr) {
     vars.set(varname, item);
     const res = run();
     vars.set(accname, res);
-  });
+  }
   const result = vars.get(accname);
   vars.del(accname);
   vars.del(varname);
