@@ -1,0 +1,11 @@
+{
+  "extends": "./node_modules/config-galore/tsconfig.json",
+  "include": ["src"],
+  "exclude": ["node_modules", "lib", "es6", "es2020", "esm", "docs", "README.md"],
+  "typedocOptions": {
+    "entryPoints": [
+      "src/index.ts"
+    ],
+    "out": "typedocs"
+  }
+}
