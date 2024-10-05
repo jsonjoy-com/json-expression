@@ -448,18 +448,18 @@ export const jsonExpressionEvaluateTests = (check: Check) => {
 
         // "source_ip": [{"cidr": "10.0.0.0/24"}]
         // xtest('IP address matching', () => {
-          // const data = {
-          //   source_ip: '10.0.0.255',
-          // };
-          // check(['cidr', '10.0.0.0/24', ['get', '/source_ip']], true, data);
+        // const data = {
+        //   source_ip: '10.0.0.255',
+        // };
+        // check(['cidr', '10.0.0.0/24', ['get', '/source_ip']], true, data);
         // });
 
         // "price_usd": [{"numeric": [">", 0, "<=", 150]}]
         // xtest('between operator', () => {
-          // const data = {
-          //   price_usd: 100,
-          // };
-          // check(['><=', 0, 150, ['/price_usd']], true, data);
+        // const data = {
+        //   price_usd: 100,
+        // };
+        // check(['><=', 0, 150, ['/price_usd']], true, data);
         // });
 
         // "store": [{"exists": true}]

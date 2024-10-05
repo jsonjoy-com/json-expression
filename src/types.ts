@@ -290,19 +290,14 @@ export type JsonExpressionContext = JsonExpressionExecutionContext & JsonExpress
 export type OperatorDefinition<E extends Expression> = [
   /** Canonical operator name. */
   name: string,
-
   /** Alternative names for this operator. */
   aliases: Array<string | number>,
-
   /** Operator arity. -1 means operator is variadic. */
   arity: -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | [min: number, max: number],
-
   /** Evaluates an expression with this operator. */
   eval: OperatorEval<E>,
-
   /** Compile expression to executable JavaScript. */
   codegen: (ctx: OperatorCodegenCtx<E>) => ExpressionResult,
-
   /**
    * Whether this expression has side effects. For example, data retrieval
    * expressions or random value generation is considered impure.
