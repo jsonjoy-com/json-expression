@@ -17,7 +17,7 @@ export const throwOnUndef = (value: unknown, def?: unknown) => {
 
 export const type = (value: unknown): string => {
   if (value === null) return 'null';
-  if (value instanceof Array) return 'array';
+  if (Array.isArray(value)) return 'array';
   if (value instanceof Uint8Array) return 'binary';
   return typeof value;
 };
@@ -61,7 +61,7 @@ export const len = (value: unknown): number => {
     case 'string':
       return value.length;
     case 'object': {
-      if (value instanceof Array) return value.length;
+      if (Array.isArray(value)) return value.length;
       if (value instanceof Uint8Array) return value.length;
       if (!value) return 0;
       return Object.keys(value).length;
@@ -80,7 +80,7 @@ export const member = (container: unknown, index: unknown): unknown => {
     }
     case 'object': {
       if (!container) throw new Error('NOT_CONTAINER');
-      if (container instanceof Array || container instanceof Uint8Array) {
+      if (Array.isArray(container) || container instanceof Uint8Array) {
         const i = int(index);
         if (i < 0 || i >= container.length) return undefined;
         return container[i];
@@ -199,7 +199,7 @@ export const u8 = (bin: unknown, pos: unknown) => {
 // ----------------------------------------------------- Array operator helpers
 
 export const asArr = (value: unknown): unknown[] => {
-  if (value instanceof Array) return value as unknown[];
+  if (Array.isArray(value)) return value as unknown[];
   throw new Error('NOT_ARRAY');
 };
 
@@ -348,18 +348,18 @@ export const objDelRaw = (obj: Record<string, unknown>, key: string): Record<str
 // -------------------------------------------------------------------- Various
 
 export const isLiteral = (value: unknown): boolean => {
-  if (value instanceof Array) return value.length === 1;
+  if (Array.isArray(value)) return value.length === 1;
   else return true;
 };
 
 export const asLiteral = <T>(value: Literal<T>): T => {
-  if (value instanceof Array) {
+  if (Array.isArray(value)) {
     if (value.length !== 1) throw new Error('Invalid literal.');
     return value[0];
   } else return value;
 };
 
-export const literal = <T = unknown>(value: T): T | [T] => (value instanceof Array ? [value] : value);
+export const literal = <T = unknown>(value: T): T | [T] => (Array.isArray(value) ? [value] : value);
 
 export const assertFixedArity = (operator: string, arity: number, expr: Expression): void => {
   if (expr.length !== arity + 1) throw new Error(`"${operator}" operator expects ${arity} operands.`);
@@ -371,7 +371,7 @@ export const assertVariadicArity = (operator: string, expr: Expression): void =>
 
 export const assertArity = (operator: string, arity: number | [min: number, max: number], expr: Expression): void => {
   if (!arity) return;
-  if (arity instanceof Array) {
+  if (Array.isArray(arity)) {
     const [min, max] = arity;
     if (expr.length < min + 1) throw new Error(`"${operator}" operator expects at least ${min} operands.`);
     if (max !== -1 && expr.length > max + 1) throw new Error(`"${operator}" operator expects at most ${max} operands.`);
