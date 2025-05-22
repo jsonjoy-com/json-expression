@@ -1,6 +1,6 @@
 import * as util from '../util';
 import {Expression, type ExpressionResult, Literal} from '../codegen-steps';
-import {$$deepEqual} from '@jsonjoy.com/util/lib/json-equal/$$deepEqual';
+import {deepEqualCodegen} from '@jsonjoy.com/util/lib/json-equal/deepEqualCodegen';
 import type * as types from '../types';
 import type {Vars} from '../Vars';
 
@@ -172,7 +172,7 @@ export const arrayOperators: types.OperatorDefinition<any>[] = [
       const arr = ctx.operands[0];
       const val = ctx.operands[1];
       if (val instanceof Literal) {
-        const fnJs = $$deepEqual(val.val);
+        const fnJs = deepEqualCodegen(val.val);
         const d = ctx.const(fnJs);
         ctx.link(util.isInArr2, 'isInArr2');
         const js = `isInArr2((${ctx.operands[0]}),${d})`;
@@ -211,7 +211,7 @@ export const arrayOperators: types.OperatorDefinition<any>[] = [
     (ctx: types.OperatorCodegenCtx<types.ExprIndexOf>): ExpressionResult => {
       const val = ctx.operands[1];
       if (val instanceof Literal) {
-        const fnJs = $$deepEqual(val.val);
+        const fnJs = deepEqualCodegen(val.val);
         const d = ctx.const(fnJs);
         ctx.link(util.indexOf2, 'indexOf2');
         const js = `indexOf2((${ctx.operands[0]}),${d})`;

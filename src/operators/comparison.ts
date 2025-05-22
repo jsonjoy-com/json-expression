@@ -1,6 +1,6 @@
 import {Expression, type ExpressionResult, Literal} from '../codegen-steps';
 import {deepEqual} from '@jsonjoy.com/util/lib/json-equal/deepEqual';
-import {$$deepEqual} from '@jsonjoy.com/util/lib/json-equal/$$deepEqual';
+import {deepEqualCodegen} from '@jsonjoy.com/util/lib/json-equal/deepEqualCodegen';
 import * as util from '../util';
 import type * as types from '../types';
 
@@ -10,7 +10,7 @@ const eqLitVsExpr = (
   ctx: types.OperatorCodegenCtx<types.Expression>,
   not?: boolean,
 ): ExpressionResult => {
-  const fn = $$deepEqual(literal.val);
+  const fn = deepEqualCodegen(literal.val);
   const d = ctx.const(fn);
   return new Expression(`${not ? '!' : ''}${d}(${expression})`);
 };
