@@ -1,4 +1,4 @@
-import type {JavaScript} from '@jsonjoy.com/util/lib/codegen';
+import type {JavaScript} from '@jsonjoy.com/codegen';
 import type {Vars} from './Vars';
 import type {ExpressionResult} from './codegen-steps';
 import type {JsonExpressionFn} from './codegen';

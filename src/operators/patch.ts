@@ -1,10 +1,11 @@
 import {Expression, type ExpressionResult} from '../codegen-steps';
-import type * as types from '../types';
 import {toPath} from '@jsonjoy.com/json-pointer/lib/util';
-import type {Path} from '@jsonjoy.com/json-pointer/lib/types';
-import {type JavaScript, type JavaScriptLinked, compileClosure} from '@jsonjoy.com/util/lib/codegen';
+import {compileClosure} from '@jsonjoy.com/codegen/lib/compile';
 import {$findRef} from '@jsonjoy.com/json-pointer/lib/codegen/findRef';
 import {find} from '@jsonjoy.com/json-pointer/lib/find';
+import type * as types from '../types';
+import type {Path} from '@jsonjoy.com/json-pointer/lib/types';
+import type {JavaScript, JavaScriptLinked} from '@jsonjoy.com/codegen';
 
 const validateAddOperandCount = (count: number) => {
   if (count < 3) {
