@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1747950853058" clover="3.2.0">
-  <project timestamp="1747950853058" name="All files">
+<coverage generated="1756038637498" clover="3.2.0">
+  <project timestamp="1756038637498" name="All files">
     <metrics statements="2900" coveredstatements="2825" conditionals="263" coveredconditionals="212" methods="1116" coveredmethods="1093" elements="4279" coveredelements="4130" complexity="0" loc="2900" ncloc="2900" packages="3" files="23" classes="23"/>
     <package name="src">
       <metrics statements="352" coveredstatements="326" conditionals="156" coveredconditionals="123" methods="87" coveredmethods="79"/>
@@ -41,7 +41,7 @@
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
         <line num="20" count="1221" type="stmt"/>
         <line num="21" count="1221" type="stmt"/>
@@ -2815,54 +2815,54 @@
       <file name="patch.ts" path="/home/runner/work/json-expression/json-expression/src/operators/patch.ts">
         <metrics statements="49" coveredstatements="41" conditionals="12" coveredconditionals="2" methods="6" coveredmethods="6"/>
         <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="4" type="cond" truecount="0" falsecount="1"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="4" type="cond" truecount="0" falsecount="1"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="6" type="cond" truecount="0" falsecount="1"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="26" count="3" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="6" type="cond" truecount="0" falsecount="1"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
-        <line num="45" count="2" type="stmt"/>
-        <line num="51" count="3" type="stmt"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="78" count="3" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
         <line num="79" count="3" type="stmt"/>
         <line num="80" count="3" type="stmt"/>
         <line num="81" count="3" type="stmt"/>
         <line num="82" count="3" type="stmt"/>
-        <line num="83" count="4" type="stmt"/>
+        <line num="83" count="3" type="stmt"/>
         <line num="84" count="4" type="stmt"/>
         <line num="85" count="4" type="stmt"/>
         <line num="86" count="4" type="stmt"/>
-        <line num="87" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="87" count="4" type="stmt"/>
         <line num="88" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="89" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="90" count="0" type="stmt"/>
-        <line num="91" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="89" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="90" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="91" count="0" type="stmt"/>
         <line num="92" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="93" count="0" type="stmt"/>
-        <line num="96" count="3" type="stmt"/>
-        <line num="99" count="1" type="stmt"/>
+        <line num="93" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="97" count="3" type="stmt"/>
         <line num="100" count="1" type="stmt"/>
         <line num="101" count="1" type="stmt"/>
         <line num="102" count="1" type="stmt"/>
         <line num="103" count="1" type="stmt"/>
         <line num="104" count="1" type="stmt"/>
-        <line num="105" count="2" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
         <line num="106" count="2" type="stmt"/>
         <line num="107" count="2" type="stmt"/>
         <line num="108" count="2" type="stmt"/>
         <line num="109" count="2" type="stmt"/>
         <line num="110" count="2" type="stmt"/>
-        <line num="112" count="1" type="stmt"/>
+        <line num="111" count="2" type="stmt"/>
+        <line num="113" count="1" type="stmt"/>
       </file>
       <file name="string.ts" path="/home/runner/work/json-expression/json-expression/src/operators/string.ts">
         <metrics statements="63" coveredstatements="59" conditionals="12" coveredconditionals="9" methods="17" coveredmethods="16"/>
