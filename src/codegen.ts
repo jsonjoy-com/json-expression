@@ -1,9 +1,9 @@
 import * as util from './util';
-import {Codegen} from '@jsonjoy.com/util/lib/codegen/Codegen';
+import {Codegen} from '@jsonjoy.com/codegen/lib/Codegen';
 import {type ExpressionResult, Literal} from './codegen-steps';
 import {createEvaluate} from './createEvaluate';
-import type {JavaScript} from '@jsonjoy.com/util/lib/codegen';
 import {Vars} from './Vars';
+import type {JavaScript} from '@jsonjoy.com/codegen';
 import type * as types from './types';
 
 export type JsonExpressionFn = (vars: types.JsonExpressionExecutionContext['vars']) => unknown;

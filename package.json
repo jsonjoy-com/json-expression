@@ -56,8 +56,9 @@
     "tslib": "2"
   },
   "dependencies": {
-    "@jsonjoy.com/json-pointer": "^1.0.0",
-    "@jsonjoy.com/util": "^1.6.0"
+    "@jsonjoy.com/codegen": "^1.0.0",
+    "@jsonjoy.com/json-pointer": "^1.0.2",
+    "@jsonjoy.com/util": "^1.9.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
